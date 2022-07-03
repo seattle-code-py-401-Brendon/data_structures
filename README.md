@@ -1,25 +1,22 @@
 # Data Structures and Algorithms
 
-### ******************************
+please use the dropdown option to select what you would like to navigate to....
+<!-- TABLE OF CONTENTS -->
+<h2><details><summary>Code-Challenges</summary>
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+[Linked List](./python/code_challenges/data_structures/linked_list/README.md)
 
-## Repository Quick Tour and Usage
+[Zip List](./python/code_challenges/data_structures/linked_list/README.md)
 
-### 301 Code Challenges
+[pseudoQueue](./python/code_challenges/stack_queue_pseudo/README.md)
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
+[Animal Shelter](./python/code_challenges/stack_queue_animal_shelter/README.md)
 
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
+[stack queue brackets](./python/code_challenges/stack_queue_brackets/README.md)
+</details>
 
-If you have not already done so, run `npm install` from within this folder to setup your system to be able to run tests using `Jest`
+</h2>
 
-To run your tests
 
-- Change to the `javascript` folder
-- run `npm test` to run all of the tests
-- run `npm test ##` to only run tests for challenge ## (i.e. 01)
-
-### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+<details><summary>Testing</summary>
+- to run tests, activate your virtual Environment then navigate to the tests folder and in the terminal run pytest inside the tests folder. 
