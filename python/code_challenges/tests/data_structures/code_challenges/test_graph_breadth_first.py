@@ -1,5 +1,5 @@
 import pytest
-from code_challenges.data_structures.graph import Graph
+from python.code_challenges.data_structures.graph import Graph
 
 
 def test_exists():

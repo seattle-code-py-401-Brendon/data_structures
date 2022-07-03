@@ -1,6 +1,6 @@
 import pytest
-from code_challenges.linked_list_zip import zip_lists
-from code_challenges.data_structures.linked_list import LinkedList
+from python.code_challenges.linked_list_zip.linked_list_zip import zip_lists
+from python.code_challenges.data_structures.linked_list.linked_list import LinkedList
 
 
 def test_exists():

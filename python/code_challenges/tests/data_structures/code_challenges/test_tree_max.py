@@ -1,5 +1,5 @@
 import pytest
-from code_challenges.data_structures.binary_tree import BinaryTree, Node
+from python.code_challenges.data_structures.binary_tree import BinaryTree, Node
 
 
 @pytest.mark.skip("TODO")

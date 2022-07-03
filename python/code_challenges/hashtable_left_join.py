@@ -1,4 +1,4 @@
-from data_structures.hashtable import Hashtable
+from python.code_challenges.data_structures.hashtable import Hashtable
 
 
 def left_join():

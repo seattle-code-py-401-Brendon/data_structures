@@ -1,6 +1,6 @@
 import pytest
-from code_challenges.data_structures.graph import Graph
-from code_challenges.graph_business_trip import direct_flights
+from python.code_challenges.data_structures.graph import Graph
+from python.code_challenges.graph_business_trip import direct_flights
 
 
 @pytest.mark.skip("TODO")

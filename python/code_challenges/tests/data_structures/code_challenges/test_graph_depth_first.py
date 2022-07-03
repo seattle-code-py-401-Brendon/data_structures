@@ -1,6 +1,5 @@
 import pytest
-from code_challenges.data_structures.graph import Graph, Vertex
-
+from python.code_challenges.data_structures.graph import Graph, Vertex
 
 @pytest.mark.skip("TODO")
 def test_full(graph_and_root):
@@ -50,7 +49,6 @@ def test_mates_crowded(graph):
 
 @pytest.fixture
 def graph():
-
     letters = Graph()
 
     a = letters.add_node("a")
