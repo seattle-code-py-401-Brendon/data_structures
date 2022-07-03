@@ -1,7 +1,21 @@
 # Data Structures and Algorithms
 
-### ******************************
+## Navigation
 
+
+[Linked List](./python//data_structures/linked_list/README.md)
+
+[Zip List](./python/code_challenges/linked-list-zip/README.md)
+
+[pseudoQueue](./python/code_challenges/stack_queue_pseudo/README.md)
+
+[Animal Shelter](./python/code_challenges/stack_queue_animal_shelter/README.md)
+
+[stack queue brackets](./python/code_challenges/stack-queue-brackets/README.md)
+-----------------
+-----------------
+-----------------
+-----------------
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
 
 ## Repository Quick Tour and Usage
