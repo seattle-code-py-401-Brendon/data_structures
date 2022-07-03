@@ -1,6 +1,6 @@
 import pytest
-from data_structures.stack import Stack
-from data_structures.invalid_operation_error import InvalidOperationError
+from code_challenges.data_structures.stack import Stack
+from code_challenges.data_structures.invalid_operation_error import InvalidOperationError
 
 
 def test_exists():
