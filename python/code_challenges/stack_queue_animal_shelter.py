@@ -1,4 +1,4 @@
-from code_challenges.data_structures.queue import Queue
+from data_structures.queue import Queue
 
 class AnimalShelter:
     pass
