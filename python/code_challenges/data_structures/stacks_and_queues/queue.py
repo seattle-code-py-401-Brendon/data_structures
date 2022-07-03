@@ -1,4 +1,4 @@
-from python.code_challenges.data_structures.invalid_operation_error import InvalidOperationError
+# from python.code_challenges.data_structures.invalid_operation_error import InvalidOperationError
 
 
 class Node:
@@ -22,21 +22,26 @@ class Queue:
 
         if self.front is None:
             self.front = node
+            print(self.front, 'inside enqueue')
         else:
             self.rear.next = node
         self.rear = node
 
     def dequeue(self):
-        if self.front is None:
-            raise InvalidOperationError()
-        else:
+        if self.front:
             temp = self.front
             self.front = temp.next
-            return temp.value
+            # print(temp, 'inside dequeue')
+            return temp
+
+        else:
+            # raise InvalidOperationError()
+            pass
 
     def peek(self):
         if self.front is None:
-            raise InvalidOperationError()
+            pass
+            # raise InvalidOperationError()
         else:
             return self.front.value
 

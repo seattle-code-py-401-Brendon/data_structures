@@ -1,2 +1,2 @@
 class InvalidOperationError(Exception):
-    pass
+    print('still hitting exception')
