@@ -11,7 +11,7 @@
 
 [Animal Shelter](./python/code_challenges/stack_queue_animal_shelter/README.md)
 
-[stack queue brackets](./python/code_challenges/stack-queue-brackets/README.md)
+[stack queue brackets](./python/code_challenges/stack_queue_brackets/README.md)
 -----------------
 -----------------
 -----------------
