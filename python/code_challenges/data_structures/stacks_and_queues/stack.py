@@ -31,13 +31,10 @@ class Stack:
             return temp.value
 
     def is_empty(self):
-        try:
-            if self.top is None:
-                return True
-            else:
-                return False
-        finally:
-            raise InvalidOperationError
+        if self.top is None:
+            return True
+        else:
+            return False
 
     def peek(self):
         if self.top is None:
