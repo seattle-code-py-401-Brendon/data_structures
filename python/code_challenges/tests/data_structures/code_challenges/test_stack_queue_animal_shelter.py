@@ -2,17 +2,19 @@ import pytest
 from python.code_challenges.stack_queue_animal_shelter.stack_queue_animal_shelter import AnimalShelter, Dog, Cat
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_single_cat():
     shelter = AnimalShelter()
     cat = Cat()
+    print(cat)
     shelter.enqueue(cat)
     actual = shelter.dequeue("cat")
+    print(actual)
     expected = cat
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_single_dog():
     shelter = AnimalShelter()
     dog = Dog()
