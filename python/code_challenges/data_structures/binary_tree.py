@@ -14,14 +14,22 @@ class BinaryTree:
             self.root = node
         elif self.root.left is None:
             self.root.left = node
+            return self.insert(value)
         elif self.root.left is not None and self.root.right is None:
             self.root.right = node
-        else:
-            return self.insert(value)
 
     def pre_order(self):
         """ [Traverse] : Root → Left → Right """
-        pass
+        values_list = []
+
+        def traverse_tree(root):
+            if not root:
+                return
+            values_list.append(root.value)
+            traverse_tree(root.left)
+            traverse_tree(root.right)
+        traverse_tree(self.root)
+        return values_list
 
     def post_order(self):
         """ [Traverse] : Left → Root → Right """
@@ -47,7 +55,11 @@ class Node:
 
 if __name__ == '__main__':
     tree = BinaryTree()
-    tree.insert(1)
-    tree.insert(2)
-    tree.insert(3)
-    print(tree.root.left.value)
+    tree.root = Node('a')
+    tree.root.left = Node("b")
+    tree.root.right = Node("c")
+    tree.root.left.left = Node("d")
+    tree.root.left.right = Node("e")
+    tree.root.right.left = Node("f")
+    tree.root.right.right = Node("g")
+    print(tree.pre_order())
