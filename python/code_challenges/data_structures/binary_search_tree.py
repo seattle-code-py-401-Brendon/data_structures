@@ -11,28 +11,29 @@ class BinarySearchTree(BinaryTree):
         self.root = None
 
     def add(self, value):
-        # method body here
         if self.root is None:
             self.root = Node(value)
-        elif self.root.value > value:
-            if self.root.left is None:
-                self.root.left = Node(value)
-            else:
-                self.root = self.root.left
-                return self.add(value)
-        elif self.root.value < value:
-            if self.root.right is None:
-                self.root.right = Node(value)
-            else:
-                self.root = self.root.right
-                return self.add(value)
+
+        def traverse_tree(root):
+            """Traverses through the tree"""
+            if root.value < value:
+                if root.right is None:
+                    root.right = Node(value)
+                else:
+                    traverse_tree(root.right)
+            elif root.value > value:
+                if root.left is None:
+                    root.left = Node(value)
+                else:
+                    traverse_tree(root.left)
+
+        traverse_tree(self.root)
 
 
 if __name__ == '__main__':
     tree = BinarySearchTree()
     tree.add(5)
     tree.add(4)
+    tree.add(6)
     tree.add(3)
-    tree.add(2)
-    print(tree.root.value)
-
+    print(tree.root.left.value)
