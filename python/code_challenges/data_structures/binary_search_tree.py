@@ -15,6 +15,7 @@ class BinarySearchTree(BinaryTree):
             self.root = Node(value)
 
         def traverse_tree(root):
+            """Traverses through the tree"""
             if root.value < value:
                 if root.right is None:
                     root.right = Node(value)
