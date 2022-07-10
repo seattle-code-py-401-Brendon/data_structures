@@ -9,14 +9,14 @@ class BinaryTree:
 
     def insert(self, value):
         """insert node from left to write based on if left or right is empty, empty left gets priority"""
-        node = Node(value)
-        if self.is_empty() is True:
-            self.root = node
-        elif self.root.left is None:
-            self.root.left = node
-            return self.insert(value)
-        elif self.root.left is not None and self.root.right is None:
-            self.root.right = node
+        # node = Node(value)
+        # if self.is_empty() is True:
+        #     self.root = node
+        # elif self.root.left is None:
+        #     self.root.left = node
+        #     return self.insert(value)
+        # elif self.root.left is not None and self.root.right is None:
+        #     self.root.right = node
 
     def pre_order(self):
         """ [Traverse] : Root → Left → Right """
