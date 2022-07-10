@@ -29,11 +29,38 @@ class BinarySearchTree(BinaryTree):
 
         traverse_tree(self.root)
 
+    def contains(self, value):
+        if self.root is None:
+            return False
+
+        def traverse_tree(root):
+            if root.value == value:
+                return True
+            elif root.value > value:
+                if root.left is None:
+                    return False
+                elif root.left.value == value:
+                    return True
+                else:
+                    return traverse_tree(root.left)
+            elif root.value < value:
+                if root.right is None:
+                    return False
+                elif root.right.value == value:
+                    return True
+                else:
+                    return traverse_tree(root.right)
+
+        return traverse_tree(self.root)
+
 
 if __name__ == '__main__':
     tree = BinarySearchTree()
-    tree.add(5)
-    tree.add(4)
-    tree.add(6)
-    tree.add(3)
-    print(tree.root.left.value)
+    tree.add(10)
+    tree.add(9)
+    tree.add(11)
+    tree.add(8)
+    tree.add(1)
+    print(tree.root.left.left.value)
+    print(tree.root.value)
+    print(tree.contains(0))
