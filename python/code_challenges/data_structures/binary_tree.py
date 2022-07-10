@@ -28,16 +28,37 @@ class BinaryTree:
             values_list.append(root.value)
             traverse_tree(root.left)
             traverse_tree(root.right)
+
         traverse_tree(self.root)
         return values_list
 
     def post_order(self):
         """ [Traverse] : Left → Root → Right """
-        pass
+        values_list = []
+
+        def traverse_tree(root):
+            if not root:
+                return
+            traverse_tree(root.left)
+            traverse_tree(root.right)
+            values_list.append(root.value)
+
+        traverse_tree(self.root)
+        return values_list
 
     def in_order(self):
         """ [Traverse] : Left → Right → Root """
-        pass
+        values_list = []
+
+        def traverse_tree(root):
+            if not root:
+                return
+            traverse_tree(root.left)
+            values_list.append(root.value)
+            traverse_tree(root.right)
+
+        traverse_tree(self.root)
+        return values_list
 
     def is_empty(self):
         if self.root is None:
