@@ -1,4 +1,4 @@
-from python.code_challenges.data_structures.binary_tree import BinaryTree
+from python.code_challenges.data_structures.binary_tree.binary_tree import BinaryTree
 
 
 class BinarySearchTree(BinaryTree):
