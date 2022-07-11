@@ -33,7 +33,7 @@ class BinaryTree:
         return values_list
 
     def post_order(self):
-        """ [Traverse] : Left → Root → Right """
+        """ [Traverse] : Left → Right → Root """
         values_list = []
 
         def traverse_tree(root):
@@ -47,7 +47,7 @@ class BinaryTree:
         return values_list
 
     def in_order(self):
-        """ [Traverse] : Left → Right → Root """
+        """ [Traverse] : Left → Root → Right """
         values_list = []
 
         def traverse_tree(root):
