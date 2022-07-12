@@ -13,6 +13,9 @@ Returns: number
 </li>
 <ul>
 
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![Binary-tree-max](./binary-tree-max.drawio.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
