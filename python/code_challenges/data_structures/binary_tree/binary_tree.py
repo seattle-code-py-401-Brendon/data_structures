@@ -9,14 +9,6 @@ class BinaryTree:
 
     def insert(self, value):
         """insert node from left to write based on if left or right is empty, empty left gets priority"""
-        # node = Node(value)
-        # if self.is_empty() is True:
-        #     self.root = node
-        # elif self.root.left is None:
-        #     self.root.left = node
-        #     return self.insert(value)
-        # elif self.root.left is not None and self.root.right is None:
-        #     self.root.right = node
 
     def pre_order(self):
         """ [Traverse] : Root → Left → Right """
@@ -59,6 +51,20 @@ class BinaryTree:
 
         traverse_tree(self.root)
         return values_list
+
+    def max_value(self):
+
+        def traverse_tree(root):
+            largest = 0
+            if not root:
+                return
+            if root.value > largest:
+                largest = root.value
+            traverse_tree(root.left)
+            traverse_tree(root.right)
+            return largest
+
+        traverse_tree(self.root)
 
     def is_empty(self):
         if self.root is None:
