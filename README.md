@@ -19,6 +19,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Binary Tree](./python/code_challenges/data_structures/binary_tree/readme.md)
 
+[Max Binary Tree](./python/code_challenges/data_structures/binary_tree/binary_tree_max.md)
+
 
 </details>
 </h2>
