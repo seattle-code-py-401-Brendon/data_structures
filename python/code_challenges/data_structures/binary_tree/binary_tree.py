@@ -53,17 +53,12 @@ class BinaryTree:
         return values_list
 
     def find_maximum_value(self):
-
-        # largest_num = 0
-
         def traverse_tree(root, largest=0):
             if root is None:
                 return largest
             if root.value > largest:
                 largest = root.value
-                print(largest)
-            traverse_tree(root.left, largest)
-            traverse_tree(root.right, largest)
+            return max(traverse_tree(root.left, largest), traverse_tree(root.right, largest))
         return traverse_tree(self.root)
 
     def is_empty(self):
@@ -84,7 +79,8 @@ if __name__ == '__main__':
     tree = BinaryTree()
     tree.root = Node(10)
     tree.root.left = Node(30)
-    tree.root.right = Node(100)
-    tree.root.right.right = Node(10)
-    tree.root.left.left = Node(20)
-    tree.find_maximum_value()
+    tree.root.right = Node(-7)
+    tree.root.left.left = Node(40)
+    tree.root.left.right = Node(42)
+    tree.root.left.right.left = Node(-152)
+    print(tree.find_maximum_value())
