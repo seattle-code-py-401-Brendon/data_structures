@@ -23,3 +23,12 @@ The big O is O(n) because we dont know how many nodes are in the tree. The space
 ## API
 <!-- Description of each method publicly available in each of your trees -->
 
+## Tests
+- test if root exists
+  - def test_root_node():
+- test for max value
+  - def test_max_val():
+- test max value on a deep tree
+  - def test_max_value_deep_tree():
+- test if the value returned is greater than
+  - def test_value_greater_than():
