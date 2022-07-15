@@ -1,6 +1,6 @@
 import pytest
 from python.code_challenges.data_structures.binary_tree.binary_tree import BinaryTree, Node
-from python.code_challenges.tree_breadth_first import breadth_first
+from python.code_challenges.tree_breadth_first.tree_breadth_first import breadth_first
 
 
 @pytest.mark.skip("TODO")
