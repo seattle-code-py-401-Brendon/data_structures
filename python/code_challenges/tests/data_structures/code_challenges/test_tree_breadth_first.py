@@ -3,12 +3,12 @@ from python.code_challenges.data_structures.binary_tree.binary_tree import Binar
 from python.code_challenges.tree_breadth_first.tree_breadth_first import breadth_first
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_exists():
     assert breadth_first
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_rootless_tree():
     tree = BinaryTree()
     expected = []
@@ -16,7 +16,7 @@ def test_rootless_tree():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_single_node():
     tree = BinaryTree()
     tree.root = Node("apples")
@@ -25,7 +25,7 @@ def test_single_node():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_two_nodes():
     tree = BinaryTree()
     tree.root = Node("apples")
@@ -35,7 +35,7 @@ def test_two_nodes():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_four_nodes():
     tree = BinaryTree()
     tree.root = Node("apples")
@@ -46,8 +46,30 @@ def test_four_nodes():
     actual = breadth_first(tree)
     assert actual == expected
 
+# @pytest.mark.skip("TODO")
+def test_does_equal():
+    tree = BinaryTree()
+    tree.root = Node("apples")
+    tree.root.left = Node("bananas")
+    tree.root.right = Node("cucumbers")
+    tree.root.right.right = Node("dates")
+    expected = ["apples", "bananas", "cucumbers", "dates"]
+    actual = breadth_first(tree)
+    assert actual[2] == expected[2]
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
+def test_does_not_equal():
+    tree = BinaryTree()
+    tree.root = Node("apples")
+    tree.root.left = Node("bananas")
+    tree.root.right = Node("cucumbers")
+    tree.root.right.right = Node("dates")
+    expected = ["apples", "bananas", "cucumbers", "dates"]
+    actual = breadth_first(tree)
+    assert actual[2] != expected[3]
+
+
+# @pytest.mark.skip("TODO")
 def test_example_from_reading():
     """
     We build these out by hand because the example has some gaps

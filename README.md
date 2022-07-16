@@ -28,3 +28,4 @@ please use the dropdown option to select what you would like to navigate to....
 
 <details><summary>Testing</summary>
 - to run tests, activate your virtual Environment then navigate to the tests folder and in the terminal run pytest inside the tests folder.
+</details>
