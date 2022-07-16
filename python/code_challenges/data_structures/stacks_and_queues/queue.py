@@ -55,12 +55,13 @@ class Queue:
 
 
 if __name__ == '__main__':
-    queue = Queue()
-    queue.enqueue(1)
-    queue.enqueue(2)
-    queue.enqueue(3)
-    queue.print()
-    print('**********************')
-    print('**********************')
-    queue.dequeue()
-    queue.print()
+    pass
+    # queue = Queue()
+    # queue.enqueue(1)
+    # queue.enqueue(2)
+    # queue.enqueue(3)
+    # queue.print()
+    # print('**********************')
+    # print('**********************')
+    # queue.dequeue()
+    # queue.print()
