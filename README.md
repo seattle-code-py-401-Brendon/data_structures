@@ -21,6 +21,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Max Binary Tree](./python/code_challenges/data_structures/binary_tree/binary_tree_max.md)
 
+[Tree Fizz Buzz](./python/code_challenges/tree_breadth_first/tree_fizz_buzz/CODE-CHALLENGE.MD)
+
 
 </details>
 </h2>
