@@ -98,10 +98,13 @@ class LinkedList:
         pass
 
     def print(self):
-        current = self.head
-        while current:
-            print(current.value)
-            current = current.next
+        if self.head == None:
+            print('empty linked list')
+        else:
+            current = self.head
+            while current:
+                print(current.value)
+                current = current.next
 
     def __str__(self):
         """
@@ -130,13 +133,7 @@ class TargetError(Exception):
 
 if __name__ == "__main__":
     ll = LinkedList()
-
-    ll.insert("apple")
-
-    ll.insert("banana")
-
-    ll.insert_after("banana", "cucumber")
-
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert(3)
     ll.print()
-
-    print(str(ll) == "{ banana } -> { cucumber } -> { apple } -> NULL")
