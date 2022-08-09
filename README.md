@@ -23,6 +23,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Tree Fizz Buzz](./python/code_challenges/tree_breadth_first/tree_fizz_buzz/CODE-CHALLENGE.MD)
 
+[Insertion-sort](python/sorting/insertion/README.md)
+
 
 </details>
 </h2>
