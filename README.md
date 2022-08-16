@@ -25,6 +25,12 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Insertion-sort](python/sorting/insertion/README.md)
 
+[Merge-sort](python/sorting/merge/README.md)
+
+[Quick-sort](python/sorting/quick/README.md)
+
+[Linked-list-BST-Blog](python/lll_bst_class_28/README.md)
+
 
 </details>
 </h2>
