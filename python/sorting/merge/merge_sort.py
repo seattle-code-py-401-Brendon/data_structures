@@ -38,3 +38,8 @@ def merge(left, right, arr):
             arr[k] = left[i]
             i += 1
             k += 1
+
+if __name__ == '__main__':
+  arr = [1,4,2,3,9,8]
+  merge_sort(arr)
+  print(arr)
