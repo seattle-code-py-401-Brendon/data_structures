@@ -36,14 +36,14 @@ def test_merge_sort_dupes():
 
 # expected failures
 
-@pytest.mark.xfail():
+@pytest.mark.xfail
 def test_merge_sort_empty_fail():
   arr = []
   actual = merge_sort(arr)
   expected = [2, 4, 8, 16, 23, 42]
   assert actual == expected
 
-@pytest.mark.xfail():
+@pytest.mark.xfail
 def test_merge_sort_fail():
   arr = [8, 4, 23, 42, 16, 15]
   actual = merge_sort(arr)
