@@ -7,6 +7,7 @@ Create a Blog that Walks through Merge sort
 ## Links and Resources
 <!-- Embedded whiteboard image -->
 ![WhiteBoard](merge_sort.png)
+![WhiteBoard](merge-sort.png)
 
 ### Link To Code
 <!-- Link to code solution file -->
