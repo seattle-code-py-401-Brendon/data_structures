@@ -1,7 +1,6 @@
 import pytest
 
-from python.sorting.insertion.insertion_sort import insertion_sort
-
+from insertion.insertion_sort import insertion_sort
 
 # @pytest.mark.skip('Insertion sort')
 def test_insertion_sort_initial():
