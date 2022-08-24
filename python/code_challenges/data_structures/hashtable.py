@@ -1,21 +1,32 @@
-from linked_list.linked_list import LinkedList
+from python.code_challenges.data_structures.linked_list.linked_list import LinkedList
 
 class Hashtable:
-    def __init__(self, size=10):
+    def __init__(self, size=1024):
         self.size = size
         self.buckets = size * [None]
    
     def hash(self, key):
+
         # method body here
         total = 0
+        if type(key) is int:
+            char = str(key)
+            for ch in char:
+                total += ord(ch)
 
-        for ch in key:
-            total += ord(ch)
+            primed = total * 19
 
-        primed = total * 19
+            index = primed % self.size
+            return index
 
-        index = primed % self.size
-        return index
+        else:
+            for ch in key:
+                total += ord(ch)
+
+            primed = total * 19
+
+            index = primed % self.size
+            return index
 
     def set(self,key, value):
         index = self.hash(key)
@@ -32,6 +43,8 @@ class Hashtable:
         index = self.hash(key)
         if self.buckets[index]:
             return self.buckets[index].head.value[key]
+        else:
+            return 'key non existent'
 
     def contains(self,key):
         index = self.hash(key)
@@ -62,10 +75,12 @@ class Hashtable:
 
 if __name__ == '__main__':
     new_table = Hashtable()
-    new_table.set('tad', 'hampton')
-    new_table.set('dat', 'hampton')
-    new_table.set('brendon', 'lee')
-    new_table.set('brendon', 'fdgdfg')
-    new_table.set('browdbf', 'lee')
+    # new_table.set('tad', 'hampton')
+    # new_table.set('dat', 'hampton')
+    # new_table.set('brendon', 'lee')
+    # new_table.set('brendon', 'fdgdfg')
+    # new_table.set('browdbf', 'lee')
     # print(new_table.contains(''))
-    print(new_table.keys())
+    # print(new_table.keys())
+
+
