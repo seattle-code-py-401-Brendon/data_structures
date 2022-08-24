@@ -31,6 +31,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Linked-list-BST-Blog](python/lll_bst_class_28/README.md)
 
+[HashTable](python/code_challenges/data_structures/hashtable.md)
+
 
 </details>
 </h2>
