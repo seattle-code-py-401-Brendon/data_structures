@@ -33,6 +33,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [HashTable](python/code_challenges/data_structures/hashtable.md)
 
+[Hash Table repeated word](python/code_challenges/HashtableRepeatedWord.md)
+
 
 </details>
 </h2>
