@@ -35,6 +35,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Hash Table repeated word](python/code_challenges/HashtableRepeatedWord.md)
 
+[Tree Intersection](python/code_challenges/tree-intersection.md)
+
 
 </details>
 </h2>
