@@ -37,6 +37,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Tree Intersection](python/code_challenges/tree-intersection.md)
 
+[Hashmap Left Join](python/code_challenges/hashtable_left_join.md)
+
 
 </details>
 </h2>
