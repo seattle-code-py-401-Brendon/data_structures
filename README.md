@@ -39,6 +39,8 @@ please use the dropdown option to select what you would like to navigate to....
 
 [Hashmap Left Join](python/code_challenges/hashtable_left_join.md)
 
+[Graph-Depth-First](python/code_challenges/graph-depth-first.md)
+
 
 </details>
 </h2>
