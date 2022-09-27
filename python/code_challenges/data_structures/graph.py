@@ -7,7 +7,7 @@ class Graph:
         # initialization here
         pass
 
-    def some_method(self):
+    def add(self):
         # method body here
         pass
 
